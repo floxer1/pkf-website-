@@ -1,5 +1,6 @@
 import LC from "../assets/LC.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 
 import {
   faEnvelope,
@@ -14,6 +15,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubscribe = () => {
+    console.log(`Subscribing with email: ${email}`);
+  };
   return (
     <div>
       <div className="footer-main">
@@ -24,18 +30,20 @@ const Footer = () => {
               PKF Research Center <br /> Inovation and creativity
             </h6>
             <div className="foot-cnt-sub">
-              <p>
+              <div className="sub-ctn-footer">
+                {" "}
                 <FontAwesomeIcon icon={faHouse} className="pro-icon" />
-                Yaounde | Cameroon - Emana
-              </p>
-              <p>
-                <FontAwesomeIcon icon={faEnvelope} className="pro-icon" />{" "}
-                contact@pkf-researchcenter.com
-              </p>
-              <p>
-                <FontAwesomeIcon icon={faPhone} className="pro-icon" />{" "}
-                (+23)5535 68 68
-              </p>
+                <p>Yaounde | Cameroon - Emana</p>
+              </div>
+              <div className="sub-ctn-footer">
+                {" "}
+                <FontAwesomeIcon icon={faEnvelope} className="pro-icon" />
+                <p> contact@pkf-researchcenter.com</p>
+              </div>
+              <div className="sub-ctn-footer">
+                <FontAwesomeIcon icon={faPhone} className="pro-icon" />
+                <p> (+23)5535 68 68</p>
+              </div>
             </div>
             <div className="foot-icons">
               <FontAwesomeIcon icon={faTwitter} className="foot-icon" />
@@ -68,9 +76,25 @@ const Footer = () => {
           <div className="footer-newsl">
             {" "}
             <h5>Newsletter</h5>
-            <p>Register now to get latest updates on promotions& coupons</p>
-            <input type="search" placeholder="Type Your Email" />
-            <p>By subscribing ,you accepted the our Policy</p>
+            <p>
+              Register now to get latest updates on promotions & <br />
+              coupons
+            </p>
+            <div className="subscribe-container">
+              <input
+                type="email"
+                placeholder="Type Your Email"
+                className="subscribe-input"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <button className="subscribe-button" onClick={handleSubscribe}>
+                Subscribe
+              </button>
+            </div>
+            <p>
+              By subscribing ,you accepted the our <a href="">Policy</a>
+            </p>
           </div>
         </div>
         <div className="main-foot2">

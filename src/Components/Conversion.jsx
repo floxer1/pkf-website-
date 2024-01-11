@@ -54,7 +54,7 @@ const Conversion = () => {
             </h5>
           </div>
 
-          <button>How We Works</button>
+          <button className="btnco btng">How We Works</button>
         </div>
       </div>
     </div>

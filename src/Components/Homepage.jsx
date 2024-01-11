@@ -1,4 +1,4 @@
-import peacock from "../assets/peacock.jpg";
+import peacock from "../assets/pkf webdite1stpict.png";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Homepage = () => {

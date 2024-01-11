@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMagnifyingGlass,
   faPhone,
-  faCaretDown,
+  faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
-
+import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <div>
@@ -17,64 +17,67 @@ const NavBar = () => {
           <nav>
             <ul className="nav-list">
               <li className="items">
-                <a href="">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li className="dropdown-parent">
-                <a href="">
+                <Link>
                   Pages
-                  <FontAwesomeIcon icon={faCaretDown} />
-                </a>
-                <ul className="dropdown">
-                  <li>
-                    <a href="">About</a>
-                  </li>
-                  <li>
-                    <a href="">Services</a>
-                  </li>
-                  <li>
-                    <a href="">Search</a>
-                  </li>
-                  <li>
-                    <a href="">Error Page</a>
-                  </li>
-                </ul>
-              </li>
-              <li className="dropdown-parent">
-                <a href="">
-                  Blog
-                  <FontAwesomeIcon icon={faCaretDown} />
-                </a>
-                <ul className="dropdown">
-                  <li>
-                    <a href="">Blog</a>
-                  </li>
-                  <li>
-                    <a href="">Single Post</a>
-                  </li>
-                </ul>
-              </li>
-              <li className="dropdown-parent">
-                <a href="">
-                  Projects
-                  <FontAwesomeIcon icon={faCaretDown} />
-                </a>
-                <ul className="dropdown">
-                  <a href="">Portfolio</a>
+                  <FontAwesomeIcon icon={faChevronDown} className="nav-icon" />
+                </Link>
 
-                  <a href="">Single Project</a>
+                <ul className="dropdown">
+                  <li>
+                    <Link to="/about">About</Link>
+                  </li>
+                  <li>
+                    <Link to="/action">Services</Link>
+                  </li>
+                  <li>
+                    <Link to="/search">Search</Link>
+                  </li>
+                  <li>
+                    <Link to="/errorpage"> Error page</Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="dropdown-parent">
+                <Link>
+                  Blog
+                  <FontAwesomeIcon icon={faChevronDown} className="nav-icon" />
+                </Link>
+                <ul className="dropdown">
+                  <li>
+                    <Link to="/blog">Blog</Link>
+                  </li>
+                  <li>
+                    <Link to="/singlepost">Single post</Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="dropdown-parent">
+                <Link>
+                  Projects
+                  <FontAwesomeIcon icon={faChevronDown} className="nav-icon" />
+                </Link>
+                <ul className="dropdown">
+                  <li>
+                    <Link to="/port">Portfolio</Link>
+                  </li>
+                  <li>
+                    {" "}
+                    <Link to="/singleproject">Single project</Link>
+                  </li>
                 </ul>
               </li>
               <li className="items">
-                <a href="">Contact</a>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </nav>
         </div>
         <div className="nav-info">
           <div className="phone">
-            <a href="">
-              <FontAwesomeIcon icon={faPhone} />
-            </a>
+            <FontAwesomeIcon icon={faPhone} />
           </div>
           <div>
             <div className="number">
