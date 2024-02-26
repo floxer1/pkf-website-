@@ -1,10 +1,6 @@
 import OLC from "../assets/OLC.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faMagnifyingGlass,
-  faPhone,
-  faChevronDown,
-} from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
@@ -20,54 +16,13 @@ const NavBar = () => {
                 <Link to="/">Home</Link>
               </li>
               <li className="dropdown-parent">
-                <Link>
-                  Pages
-                  <FontAwesomeIcon icon={faChevronDown} className="nav-icon" />
-                </Link>
-
-                <ul className="dropdown">
-                  <li>
-                    <Link to="/about">About</Link>
-                  </li>
-                  <li>
-                    <Link to="/action">Services</Link>
-                  </li>
-                  <li>
-                    <Link to="/search">Search</Link>
-                  </li>
-                  <li>
-                    <Link to="/errorpage"> Error page</Link>
-                  </li>
-                </ul>
+                <Link to="/action">Services</Link>
               </li>
               <li className="dropdown-parent">
-                <Link>
-                  Blog
-                  <FontAwesomeIcon icon={faChevronDown} className="nav-icon" />
-                </Link>
-                <ul className="dropdown">
-                  <li>
-                    <Link to="/blog">Blog</Link>
-                  </li>
-                  <li>
-                    <Link to="/singlepost">Single post</Link>
-                  </li>
-                </ul>
+                <Link to="/about">About</Link>
               </li>
               <li className="dropdown-parent">
-                <Link>
-                  Projects
-                  <FontAwesomeIcon icon={faChevronDown} className="nav-icon" />
-                </Link>
-                <ul className="dropdown">
-                  <li>
-                    <Link to="/port">Portfolio</Link>
-                  </li>
-                  <li>
-                    {" "}
-                    <Link to="/singleproject">Single project</Link>
-                  </li>
-                </ul>
+                <Link to="/singleproject">Projects</Link>
               </li>
               <li className="items">
                 <Link to="/contact">Contact</Link>

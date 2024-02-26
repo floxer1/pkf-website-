@@ -8,15 +8,15 @@ import Portfolio from "./Components/Portfolio";
 import Profil from "./Components/Profil";
 import Footer from "./Components/Footer";
 import { Route, Routes } from "react-router-dom";
-import { Action } from "./Components/Pages/Action";
-import { Blog } from "./Components/Pages/Blog";
-import { Contact } from "./Components/Pages/Contact";
-import { ErrorPage } from "./Components/Pages/ErrorPage";
-import { Port } from "./Components/Pages/Port";
-import { Search } from "./Components/Pages/Search";
-import { SinglePost } from "./Components/Pages/SinglePost";
-import { SingleProject } from "./Components/Pages/SingleProject";
-import { About } from "./Components/Pages/About";
+import { Action } from "./Pages/Action";
+import { Blog } from "./Pages/Blog";
+import { Contact } from "./Pages/Contact";
+import { ErrorPage } from "./Pages/ErrorPage";
+import { Port } from "./Pages/Port";
+import { Search } from "./Pages/Search";
+import { SinglePost } from "./Pages/SinglePost";
+import { SingleProject } from "./Pages/SingleProject";
+import { About } from "./Pages/About/About";
 
 const App = () => {
   return (

@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import sb1 from "../assets/sb1.png";
 import sb2 from "../assets/sb2.png";
 import sb3 from "../assets/sb3.png";
 import sb4 from "../assets/sb4.png";
 import sb5 from "../assets/sb5.png";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const handleCounters = () => {
@@ -58,7 +59,9 @@ const Services = () => {
             elevate their value through custom software development, product{" "}
             design, QA, and consultancy services.
           </p>
-          <button>More About Us</button>
+          <button className="service-button">
+            <Link to="/about">More About Us </Link>{" "}
+          </button>
         </div>
       </div>
       <div className="attributes">

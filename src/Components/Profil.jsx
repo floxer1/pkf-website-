@@ -3,7 +3,7 @@ import pro2 from "../assets/pro2.jpeg";
 import pro3 from "../assets/pro3.jpeg";
 import pro4 from "../assets/pro4.jpeg";
 import pro5 from "../assets/pro5.jpeg";
-
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -93,7 +93,10 @@ const Profil = () => {
         </div>
         <div className="profil-btn">
           <button className="black">See All Team</button>
-          <button className="blue">Join Our Team</button>
+          <button className="btnco btng">
+            {" "}
+            <Link to="/contact">Join Our Team</Link>
+          </button>
         </div>
       </div>
     </div>

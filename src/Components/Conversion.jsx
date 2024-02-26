@@ -3,6 +3,8 @@ import choosebubbles from "../assets/choose_bubbles.png";
 import choosebrands from "../assets/choose_brands.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+
 const Conversion = () => {
   return (
     <div>
@@ -54,7 +56,11 @@ const Conversion = () => {
             </h5>
           </div>
 
-          <button className="btnco btng">How We Works</button>
+          <button className="btnco btng">
+            <Link to="/contact?inquiry=Billing%20Inquiry">
+              Demandez Un Devis
+            </Link>
+          </button>
         </div>
       </div>
     </div>
