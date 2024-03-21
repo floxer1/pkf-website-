@@ -7,6 +7,11 @@ import { About2 } from "./About2";
 import { About3 } from "./About3";
 import { About4 } from "./About4";
 import { About5 } from "./About5";
+import afriland from "../About/Asssets_About/afriland.png";
+import k48 from "../About/Asssets_About/48.png";
+import rca from "../About/Asssets_About/rca.jpeg";
+import inteljsia from "../About/Asssets_About/inteljsia.jpeg";
+import rc1 from "../About/Asssets_About/LC.png";
 
 export const About = () => {
   const [showMore, setShowMore] = useState(false);
@@ -20,21 +25,33 @@ export const About = () => {
         <h1>About Us</h1>
       </div>
       <div className="fil">
-        <Link to="about1" spy={true} smooth={true} duration={500}>
-          Message
-        </Link>
-        <Link to="about2" spy={true} smooth={true} duration={500}>
-          Who We Are
-        </Link>
-        <Link to="about3" spy={true} smooth={true} duration={500}>
-          Our Senior Staff
-        </Link>
-        <Link to="about4" spy={true} smooth={true} duration={500}>
-          Get In Touch
-        </Link>
-        <Link to="about5" spy={true} smooth={true} duration={500}>
-          Our Work
-        </Link>
+        <ul>
+          <li>
+            <Link to="about1" spy={true} smooth={true} duration={500}>
+              Message
+            </Link>
+          </li>
+          <li>
+            <Link to="about2" spy={true} smooth={true} duration={500}>
+              Who We Are
+            </Link>
+          </li>
+          <li>
+            <Link to="about3" spy={true} smooth={true} duration={500}>
+              Our Senior Staff
+            </Link>
+          </li>
+          <li>
+            <Link to="about4" spy={true} smooth={true} duration={500}>
+              Get In Touch
+            </Link>
+          </li>
+          <li>
+            <Link to="about5" spy={true} smooth={true} duration={500}>
+              Our Work
+            </Link>
+          </li>
+        </ul>
       </div>
       <div className="aboutinfo">
         <h5>
@@ -70,6 +87,25 @@ export const About = () => {
         <About4 />
       </div>
       <About5 />
+
+      <h2 className="partners">Partners</h2>
+      <div className="partner">
+        <div className="ptn">
+          <img src={rca} alt="" />
+        </div>
+        <div className="ptn">
+          <img src={afriland} alt="" />
+        </div>
+        <div className="">
+          <img src={rc1} className="ptn-sub" alt="" />
+        </div>
+        <div className="ptn">
+          <img src={k48} alt="" />
+        </div>
+        <div className="ptn">
+          <img src={inteljsia} alt="" />
+        </div>
+      </div>
     </div>
   );
 };

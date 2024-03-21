@@ -55,7 +55,6 @@ export const About5 = () => {
                   Assumenda fugiat nemo odio repellat vel porro sit,
                   necessitatibus itaque. Beatae eveniet consequatur repellat
                   labore quisquam explicabo cumque mollitia fugiat praesentium
-                  nostrum!
                 </p>
                 <a href="">Learn More </a>
               </div>

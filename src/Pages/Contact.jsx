@@ -77,9 +77,6 @@ export const Contact = () => {
             <p>
               <strong>Work Hour:</strong> Mon-Sat: 9:00 - 18:00
             </p>
-            <div className="contact-link">
-              <a href="">GET DIRECTION</a>
-            </div>
           </div>
           <div className="contact-area">
             {isEmailSent && (
@@ -130,10 +127,7 @@ export const Contact = () => {
                 cols="70"
                 rows="10"
               ></textarea>
-              <label>
-                <input type="checkbox" className="check-boxes" />
-                By submitting, I have agreed to the Terms & Conditions
-              </label>
+
               <input
                 type="submit"
                 value="Send"

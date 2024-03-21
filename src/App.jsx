@@ -13,7 +13,7 @@ import { Blog } from "./Pages/Blog";
 import { Contact } from "./Pages/Contact";
 import { ErrorPage } from "./Pages/ErrorPage";
 import { Port } from "./Pages/Port";
-import { Search } from "./Pages/Search";
+import { Search } from "./Pages/search/Search";
 import { SinglePost } from "./Pages/SinglePost";
 import { SingleProject } from "./Pages/SingleProject";
 import { About } from "./Pages/About/About";
@@ -34,7 +34,6 @@ const App = () => {
               <Conversion />
               <Portfolio />
               <Profil />
-              <Footer />
             </>
           }
         />
@@ -44,10 +43,11 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/ErrorPage" element={<ErrorPage />} />
         <Route path="/Port" element={<Port />} />
-        <Route path="/Search " element={<Search />} />
-        <Route path="/SinglePost " element={<SinglePost />} />
+        <Route path="/Search" element={<Search />} />
+        <Route path="/SinglePost" element={<SinglePost />} />
         <Route path="/SingleProject" element={<SingleProject />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

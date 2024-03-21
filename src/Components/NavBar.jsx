@@ -1,6 +1,6 @@
 import OLC from "../assets/OLC.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
@@ -25,7 +25,7 @@ const NavBar = () => {
                 <Link to="/singleproject">Projects</Link>
               </li>
               <li className="items">
-                <Link to="/contact">Contact</Link>
+                <Link to="/search">Contact</Link>
               </li>
             </ul>
           </nav>
@@ -46,11 +46,10 @@ const NavBar = () => {
 
           <div className="nav-search">
             <div className="loop">
-              <a href="">
-                <FontAwesomeIcon icon={faMagnifyingGlass} />
+              <a href="/contact" className="search">
+                Contact Us
               </a>
             </div>
-            <p className="search">Free Quote</p>
           </div>
         </div>
       </nav>

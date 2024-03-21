@@ -19,7 +19,7 @@ const Banner = () => {
           <div className="text-left">
             <p>
               <strong>Now Hiring:</strong>Are you a driven and motivated
-              <a href=""> 1st Line IT Support Engineer?</a>
+              <a href="/search"> 1st Line IT Support Engineer?</a>
             </p>
           </div>
         </div>
