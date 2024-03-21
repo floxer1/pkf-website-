@@ -1799,3 +1799,71 @@ article.about-x div {
 .port-card {
   width: 1000px;
 }
+.ourCustomers {
+  padding: 10px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+}
+.midCon {
+  max-width: 1340px;
+  margin: auto;
+  background: #f4f4f4;
+  padding: 40px 0;
+  overflow: hidden;
+  background-size: cover;
+
+  border-radius: 10px;
+}
+
+.tac {
+  text-align: center;
+}
+
+.hdText {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+.ourCustomers li {
+  width: 33.33%;
+}
+.inner {
+  padding: 25px;
+  height: 100%;
+}
+
+.ourCustomers li .iconcv {
+  margin: 0 0 15px 0;
+  display: block;
+}
+
+.blockHd {
+  display: block;
+  font-weight: 500;
+  font-size: 19px;
+  padding-bottom: 10px;
+  line-height: normal;
+  color: #000;
+}
+
+.blockText {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.containerx {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
+}
+.mainHd {
+  font-weight: 600;
+  font-size: 32px;
+  padding-bottom: 15px;
+  color: #000;
+}

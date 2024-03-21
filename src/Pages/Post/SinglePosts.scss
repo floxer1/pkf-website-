@@ -1,0 +1,133 @@
+// Container
+.job-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 1200px;
+}
+
+// Category Cart
+
+// Sub-categories
+.category-sub1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Location
+.category-location {
+  display: flex;
+  gap: 10px;
+}
+
+// Category Data
+.category-data {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 1.6rem;
+}
+
+// Category Buttons
+.catogory-btns {
+  display: flex;
+  gap: 25px;
+}
+
+// Media Queries
+@media (min-width: 576px) {
+  .categories-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .categories-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .categories-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .categories-container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .categories-container {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .categories-container {
+    max-width: 1293px !important;
+  }
+}
+
+.categories-container {
+  width: 100%;
+  padding: 0 0.75rem;
+  margin: 0 50px;
+}
+.catogory-title {
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+  color: black;
+}
+.catogory-data {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 1.6rem;
+}
+.catogory-btn.focused {
+  background: linear-gradient(to right, #3c8ce7, #00eaff);
+  color: white;
+}
+.catogory-btn {
+  width: 150px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #00eaff;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2.6rem;
+  color: #00eaff;
+  background-color: white;
+  text-decoration: none;
+}
+.categories-container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  align-items: center;
+}
+.categories-container .category-cart {
+  width: 100%;
+  padding: 3rem 3rem;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(3, 49, 90, 0.2);
+  border-radius: 1rem;
+
+  border: 1px solid;
+}

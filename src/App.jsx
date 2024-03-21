@@ -11,12 +11,13 @@ import { Route, Routes } from "react-router-dom";
 import { Action } from "./Pages/Action";
 import { Blog } from "./Pages/Blog";
 import { Contact } from "./Pages/Contact";
-import { ErrorPage } from "./Pages/ErrorPage";
-import { Port } from "./Pages/Port";
+import { HomeNumberWrapper } from "./Pages/HomeWrap/HomeNumberWrapper";
+import { CartValues } from "./Pages/CartValues";
 import { Search } from "./Pages/search/Search";
-import { SinglePost } from "./Pages/SinglePost";
+import { SinglePost } from "./Pages/Post/SinglePost";
 import { SingleProject } from "./Pages/SingleProject";
 import { About } from "./Pages/About/About";
+import { JobApplicationForm } from "./Pages/JobForm/JobApplicationForm";
 
 const App = () => {
   return (
@@ -41,10 +42,11 @@ const App = () => {
         <Route path="/Action" element={<Action />} />
         <Route path="/Blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/ErrorPage" element={<ErrorPage />} />
-        <Route path="/Port" element={<Port />} />
+        <Route path="/HomeNumberWrapper" element={<HomeNumberWrapper />} />
+        <Route path="/CartValues" element={<CartValues />} />
         <Route path="/Search" element={<Search />} />
         <Route path="/SinglePost" element={<SinglePost />} />
+        <Route path="/JobApplicationForm" element={<JobApplicationForm />} />
         <Route path="/SingleProject" element={<SingleProject />} />
       </Routes>
       <Footer />
